@@ -112,13 +112,7 @@
 | `detection/comment/delete/<int:pk>/`    | DetectionCommentDeleteView     | Null                  | 댓글 삭제    |
 | `detection/comment/vote/<int:pk>/`      | DetectionCommentVoteView       | Null                  | 댓글 추천    |
 
-### 2.4 URL 구조(마이크로식)✅
-
-- 추후 추가 예정
-
 ## 3. 요구사항 명세와 기능 명세
-
-# API Documentation
 
 ## Home
 
