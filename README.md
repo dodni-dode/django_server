@@ -4,7 +4,7 @@
 
 ### 1.1 목표
 
-우선, 서비스는 사람들이 알고 접하는 것이 중요합니다. 이를 위해 먼저, 유명인물 영상 분석 서비스로 미국 대통령들과 후보를 유명 인물로 선정하여 미국 선거 관리위원회 및 기타 단체에 제공하고, 우리의 프로젝트를 알릴 수 있는 기회를 얻을 수 있습니다. 추가로 투표율과 관심도를 올릴 수 있는 효과를 낼 수 있습니다.
+이 프로젝트는 Python, HTML/CSS/JS, Django, MySQL, AWS Lightsail, 그리고 GitHub를 활용하여 유명인물 영상 분석 및 Q&A 웹게시판 사이트를 구현하였습니다. 사용자가 업로드한 사진을 AI가 분석하여 자동으로 답글을 생성하는 기능을 제공하는 사이트입니다.. 이를 통해 사용자들은 특정 인물의 사진을 게시판에 공유하고, 커뮤니티 형성을 촉진하는 것이 프로젝트의 목표입니다
 
 ### 1.2 기능
 
@@ -12,22 +12,6 @@
 - 유명인물 탐색 및 정보 제공 기능 : 사용자가 업로드한 사진에서 유명 인물을 탐색하고 관련 정보를 제공.
 - 두 기능을 통한 결과 AI 답글 기능
 - 커뮤니티 및 상호 작용 기능
-
-### 1.3 팀 구성
-<table>
-   <tr>
-      <th>박상준</th>
-      <th>조하나</th>
-      <th>이예은</th>
-      <th>강유화</th>
-   </tr>
-   <tr>
-      <td><img src="my.jpg" width="100%"></td>
-      <td><img src="my.jpg" width="100%"></td>
-      <td><img src="my.jpg" width="100%"></td>
-      <td><img src="my.jpg" width="100%"></td>
-   </tr>
-</table>
 
 ## 2.1 개발 환경
 
@@ -61,7 +45,7 @@
 - Web Server: NGINX
 - WSGI Server: gunicorn
 - WAS (Python Web Framework): Django, DBT, FastAPI
-- DB: PostgreSQL
+- DB: MySQL
 
 ### AI 모델 및 데이터 분석
 
@@ -78,7 +62,7 @@
 - Git, GitHub
 
 ## 2.2 배포 URL
-
+- 현제 서버 운영 중단됨
 - [도메인은 추후 추가 예정](http://3.34.71.98/)
 - 테스트용 계정
   ```
@@ -134,11 +118,43 @@
 
 ## 3. 요구사항 명세와 기능 명세
 
-- 이미지는 샘플 이미지입니다.
-<img src="readme_img\request_1.png" width="100%">
-<img src="readme_img\request_2.png" width="100%">
-<img src="readme_img\request_3.png" width="100%">
-<img src="readme_img\request_4.png" width="100%">
+# API Documentation
+
+## Home
+
+| Feature ID         | Feature Name       | Note                                                                                          |
+|--------------------|--------------------|-----------------------------------------------------------------------------------------------|
+| `home/login/`      | HomeLoginView      | 사용자가 로그인하여 자신의 계정으로 게시글 작성 및 수정, 삭제와 같은 기능을 사용할 수 있도록 함. |
+| `home/logout/`     | HomeLogoutView     | 로그인된 사용자가 로그아웃하여 계정 연결을 해제하는 기능. 로그아웃 후 게시글 수정 권한이 사라짐. |
+| `home/signup/`     | HomeSignupView     | 새로운 사용자가 회원가입을 통해 계정을 생성하고 시스템에 등록할 수 있는 기능.                   |
+| `home/list/`       | HomeListView       | 게시판에 등록된 게시글 목록을 메인 페이지에서 확인할 수 있는 기능. 특정 게시글로 이동 가능.        |
+
+## Question
+
+| Feature ID                | Feature Name          | Note                                                                                         |
+|---------------------------|-----------------------|----------------------------------------------------------------------------------------------|
+| `question/create/`        | QuestionCreateView    | 사용자가 새로운 질문을 등록할 수 있는 기능. 제목과 내용을 입력하여 질문을 게시판에 올림.            |
+| `question/modify/<int:pk>/` | QuestionModifyView   | 사용자가 작성한 질문을 수정할 수 있는 기능. 이미 등록된 질문의 제목과 내용을 변경 가능.            |
+| `question/delete/<int:pk>/` | QuestionDeleteView   | 사용자가 작성한 질문을 삭제할 수 있는 기능. 삭제된 질문은 게시판에서 더 이상 표시되지 않음.         |
+| `question/vote/<int:pk>/`   | QuestionVoteView     | 다른 사용자가 작성한 질문에 대해 추천을 할 수 있는 기능. 추천 수가 많은 질문은 게시판에서 상단에 표시됨. |
+
+## Answer
+
+| Feature ID                          | Feature Name         | Note                                                                                          |
+|-------------------------------------|----------------------|-----------------------------------------------------------------------------------------------|
+| `answer/create/<int:question_id>/`  | AnswerCreateView     | 사용자가 질문에 대해 답변을 등록할 수 있는 기능. 질문과 관련된 자신의 의견이나 해결 방법을 게시할 수 있음. |
+| `answer/modify/<int:pk>/`           | AnswerModifyView     | 사용자가 작성한 답변을 수정할 수 있는 기능. 이미 작성된 답변의 내용을 변경하거나 추가 가능.            |
+| `answer/delete/<int:pk>/`           | AnswerDeleteView     | 사용자가 작성한 답변을 삭제할 수 있는 기능. 삭제된 답변은 더 이상 게시판에서 표시되지 않음.            |
+| `answer/vote/<int:pk>/`             | AnswerVoteView       | 다른 사용자가 작성한 답변에 대해 추천할 수 있는 기능. 추천 수가 많은 답변은 게시판에서 주목받음.         |
+
+## AI Face Analysis
+
+| Feature ID            | Feature Name         | Note                                                                                         |
+|-----------------------|----------------------|----------------------------------------------------------------------------------------------|
+| `ai_face/detection/`  | AIFaceDetectionView | 사용자가 업로드한 이미지에서 얼굴을 자동으로 탐지하고, 탐지된 얼굴을 바운딩 박스로 표시하는 기능.        |
+| `ai_face/similarity/` | AIFaceSimilarityView | 탐지된 얼굴들 간의 유사도를 분석하여 얼마나 비슷한지 점수로 제공하는 기능. 얼굴 간 비교 및 분류에 활용됨. |
+| `ai_face/specific/`   | AIFaceSpecificView  | 업로드된 이미지에서 특정 인물을 탐지하고, 해당 인물의 위치를 바운딩 박스로 시각화하여 사용자에게 제공하는 기능. |
+
 
 ## 4. 프로젝트 구조와 개발 일정
 ### 4.1 프로젝트 구조
@@ -239,16 +255,12 @@ gantt
         최종발표 :2024-10-11, 3d
 ```
 
-- 이미지는 샘플 이미지입니다.
-<img src="map.png" width="100%">
-
 ## 5. 역할 분담
 
 - 팀장 : 강유화
 - 박상준
 - 조하나
 - 이예은
-
 
 ## 6. 와이어프레임 / UI / BM
 
