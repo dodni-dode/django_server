@@ -480,11 +480,10 @@ graph TD
 
 ```
 
-- 아래 Architecture 설계도는 PPT를 사용해서 작성
-- 추후 추가 예정
+- 설계도 이미지 파일
 <img src="map.png" width="100%">
 
-- 이미지 기능 플로우 차트
+- 이미지 기능 처리 플로우 차트
   
 ```mermaid
     sequenceDiagram
