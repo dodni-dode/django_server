@@ -9,18 +9,20 @@
 ### 1.2 기능
 
 - 유사도 측정 기능
-![Image](https://github.com/user-attachments/assets/4ba79db6-9282-494d-8c7d-5d58b1b3eaa4)
+<img src="https://github.com/user-attachments/assets/4ba79db6-9282-494d-8c7d-5d58b1b3eaa4">
 
 - 유명인물 탐색 및 정보 제공 기능
-![Image](https://github.com/user-attachments/assets/25105307-65dd-4f7d-97de-27bafbbe6506)
+<img src="https://github.com/user-attachments/assets/25105307-65dd-4f7d-97de-27bafbbe6506">
 
-- 커뮤니티 게시판 기능
-![Image](https://github.com/user-attachments/assets/4baa35da-1ce8-4156-a3c1-34c728c3fb7a)
-![Image](https://github.com/user-attachments/assets/8d01538b-9870-4b10-bb31-4db812655200)
-![Image](https://github.com/user-attachments/assets/45cc97d5-f9a1-4ffd-bf99-7ce4906669e4)
-![Image](https://github.com/user-attachments/assets/c9bd6c9d-51b0-4df8-9f5b-6cfb761ca98a)
-![Image](https://github.com/user-attachments/assets/b29f2f0f-a567-42f1-a407-4a5c8914d971)
-![Image](https://github.com/user-attachments/assets/1f337b01-8c15-4be0-a565-9ced42cc165a)
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+    <img src="https://github.com/user-attachments/assets/4baa35da-1ce8-4156-a3c1-34c728c3fb7a" alt="Image 1" style="width: 100%; height: auto;">
+    <img src="https://github.com/user-attachments/assets/8d01538b-9870-4b10-bb31-4db812655200" alt="Image 2" style="width: 100%; height: auto;">
+    <img src="https://github.com/user-attachments/assets/45cc97d5-f9a1-4ffd-bf99-7ce4906669e4" alt="Image 3" style="width: 100%; height: auto;">
+    <img src="https://github.com/user-attachments/assets/c9bd6c9d-51b0-4df8-9f5b-6cfb761ca98a" alt="Image 4" style="width: 100%; height: auto;">
+    <img src="https://github.com/user-attachments/assets/b29f2f0f-a567-42f1-a407-4a5c8914d971" alt="Image 5" style="width: 100%; height: auto;">
+    <img src="https://github.com/user-attachments/assets/1f337b01-8c15-4be0-a565-9ced42cc165a" alt="Image 6" style="width: 100%; height: auto;">
+</div>
+
 
 ## 2.1 개발 환경
 
