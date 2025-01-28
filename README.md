@@ -14,6 +14,7 @@
 - 유명인물 탐색 및 정보 제공 기능
 <img src="https://github.com/user-attachments/assets/25105307-65dd-4f7d-97de-27bafbbe6506">
 
+
 - ETC
 | ![Image 1](https://github.com/user-attachments/assets/4baa35da-1ce8-4156-a3c1-34c728c3fb7a) | ![Image 2](https://github.com/user-attachments/assets/8d01538b-9870-4b10-bb31-4db812655200) |
 |:---------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
