@@ -9,9 +9,10 @@
 ### 1.2 기능
 
 - 유사도 측정 기능
+  <img src="ui1.png" width="100%">
 - 유명인물 탐색 및 정보 제공 기능
-- 두 기능을 통한 결과 AI 답글 기능
-- 커뮤니티 및 상호 작용 기능
+  <img src="ui1.png" width="100%">
+- 커뮤니티 게시판 기능
 
 ## 2.1 개발 환경
 
@@ -267,72 +268,8 @@ gantt
 
 
 ### 6.2 화면 설계
-- 화면은 gif파일로 업로드해주세요.
- 
-<table>
-    <tbody>
-        <tr>
-            <td>메인</td>
-            <td>로그인</td>
-        </tr>
-        <tr>
-            <td>
-      <img src="ui1.png" width="100%">
-            </td>
-            <td>
-                <img src="ui2.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>회원가입</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>검색</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>글쓰기</td>
-        </tr>
-        <tr>
-            <td>
-           <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>글 상세보기</td>
-            <td>댓글</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-    </tbody>
-</table>
+
+ <img src="ui1.png" width="100%">
 
 
 ## 7. 데이터베이스 구조도(ERD)
