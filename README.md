@@ -15,10 +15,13 @@
 <img src="https://github.com/user-attachments/assets/25105307-65dd-4f7d-97de-27bafbbe6506">
 
 - ETC
-| ![Image 1](https://github.com/user-attachments/assets/4baa35da-1ce8-4156-a3c1-34c728c3fb7a) | ![Image 2](https://github.com/user-attachments/assets/8d01538b-9870-4b10-bb31-4db812655200) |
-|:---------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-| ![Image 3](https://github.com/user-attachments/assets/45cc97d5-f9a1-4ffd-bf99-7ce4906669e4) | ![Image 4](https://github.com/user-attachments/assets/c9bd6c9d-51b0-4df8-9f5b-6cfb761ca98a) |
-| ![Image 5](https://github.com/user-attachments/assets/b29f2f0f-a567-42f1-a407-4a5c8914d971) | ![Image 6](https://github.com/user-attachments/assets/1f337b01-8c15-4be0-a565-9ced42cc165a) |
+### 3x2 이미지 레이아웃
+
+![Image 1](https://github.com/user-attachments/assets/4baa35da-1ce8-4156-a3c1-34c728c3fb7a) ![Image 2](https://github.com/user-attachments/assets/8d01538b-9870-4b10-bb31-4db812655200)
+
+![Image 3](https://github.com/user-attachments/assets/45cc97d5-f9a1-4ffd-bf99-7ce4906669e4) ![Image 4](https://github.com/user-attachments/assets/c9bd6c9d-51b0-4df8-9f5b-6cfb761ca98a)
+
+![Image 5](https://github.com/user-attachments/assets/b29f2f0f-a567-42f1-a407-4a5c8914d971) ![Image 6](https://github.com/user-attachments/assets/1f337b01-8c15-4be0-a565-9ced42cc165a)
 
 ## 2.1 개발 환경
 
