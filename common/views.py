@@ -4,7 +4,7 @@ from django.views.generic.edit import FormView
 from common.forms import UserForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import render
-from pybo.views.base_views import BaseExtraContextMixin
+from AIBoard.views.base_views import BaseExtraContextMixin
 from django.views.generic import TemplateView
 
 

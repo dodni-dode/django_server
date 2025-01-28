@@ -1,5 +1,5 @@
 from django.contrib import admin
-from pybo.models import SimilarityPostModel, SimilarityCommentModel, DetectionCommentModel, DetectionPostModel
+from AIBoard.models import SimilarityPostModel, SimilarityCommentModel, DetectionCommentModel, DetectionPostModel
 
 # =============================
 # Admin (관리자 설정)

@@ -1,5 +1,5 @@
 from django import forms
-from pybo.models import SimilarityPostModel, SimilarityCommentModel, DetectionPostModel, DetectionCommentModel
+from AIBoard.models import SimilarityPostModel, SimilarityCommentModel, DetectionPostModel, DetectionCommentModel
 
 
 class SimilarityPostForm(forms.ModelForm):

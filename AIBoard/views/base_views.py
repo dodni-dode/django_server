@@ -402,7 +402,7 @@ class BaseReadView(DetailView):
         dict
             템플릿에 전달할 추가적인 데이터를 포함한 컨텍스트 딕셔너리입니다.
         """
-        from pybo.models import User  # User 모델 가져오기
+        from AIBoard.models import User  # User 모델 가져오기
         
         context = super().get_context_data(**kwargs)  # 부모 클래스의 get_context_data 호출
         post = self.get_object()  # 현재 게시글 가져오기

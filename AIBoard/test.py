@@ -1,5 +1,5 @@
 from django.test import TestCase
-from pybo.urls import urlpatterns
+from AIBoard.urls import urlpatterns
 
 class URLPatternTest(TestCase):
     """
