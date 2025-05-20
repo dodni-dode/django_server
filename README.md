@@ -244,7 +244,7 @@ Pybo0!Code
    └─ 📜requirements_for_server.txt
 ```
 
-### 4.1 개발 일정(WBS)
+### 4.1 개발 일정(Gantt Chart)
 
 ```mermaid
 gantt
